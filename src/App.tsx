@@ -15,6 +15,7 @@ import MessagingPage from '@/pages/messaging'
 import MiscPage from '@/pages/misc'
 import SettingsPage from '@/pages/settings'
 import ScheduledPage from '@/pages/scheduled'
+import WebhookRoutesPage from '@/pages/webhook-routes'
 
 function useBootstrap() {
   const queryClient = useQueryClient()
@@ -74,6 +75,7 @@ function App() {
         <Route path="/chats" element={<ChatsPage />} />
         <Route path="/account" element={<AccountPage />} />
         <Route path="/misc" element={<MiscPage />} />
+        <Route path="/webhook-routes" element={<WebhookRoutesPage />} />
         <Route path="/settings" element={<SettingsPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />

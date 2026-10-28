@@ -10,6 +10,7 @@ import {
   Users,
   Wrench,
   CalendarClock,
+  Network,
 } from 'lucide-react'
 import { Navigate, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { DeviceSwitcher } from '@/components/layout/device-switcher'
@@ -48,6 +49,7 @@ const navGroups = [
     label: 'System',
     items: [
       { to: '/misc', label: 'Channels & Calls', icon: Wrench },
+      { to: '/webhook-routes', label: 'Webhook Routes', icon: Network },
       { to: '/settings', label: 'Settings', icon: Settings },
     ],
   },
