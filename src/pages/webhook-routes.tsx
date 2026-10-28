@@ -55,7 +55,7 @@ const defaultFormState: RouteFormState = {
   webhook_secret: '',
   custom_params: [['token', '']],
   custom_headers: [['Authorization', 'Bearer ']],
-  exclusive: false,
+  exclusive: true,
   enabled: true,
 }
 
